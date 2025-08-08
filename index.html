@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Commerce App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My E-Commerce Store</h1>
+    <input type="text" id="searchInput" placeholder="Search products..."/>
+    <select id="sortSelect">
+      <option value="">Sort by</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+    </select>
+  </header>
+
+  <div class="main">
+    <aside>
+      <h2>Filters</h2>
+      <label>Category:
+        <select id="categoryFilter">
+          <option value="">All</option>
+        </select>
+      </label>
+      <label>Price Range:
+        <input type="range" id="priceFilter" min="0" max="1000" step="10"/>
+        <span id="priceValue">1000</span>
+      </label>
+    </aside>
+
+    <section id="productsContainer" class="products"></section>
+
+    <aside class="cart">
+      <h2>Cart</h2>
+      <ul id="cartItems"></ul>
+      <div class="cart-total">
+        <strong>Total:</strong> $<span id="cartTotal">0.00</span>
+      </div>
+    </aside>
+  </div>
+
+  <canvas id="cartChart"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
