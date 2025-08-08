@@ -39,4 +39,4 @@ Browse products, search, filter, and add items to your cart — with data stored
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/ecommerce-app.git
+   git clone https://github.com/Lakshmi-Deepika-V/E-Commerce.git
